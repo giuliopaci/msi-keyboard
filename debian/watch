@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/steelskin-pepproxy-$1\.tar\.gz/ \
+	https://github.com/telefonicaid/fiware-pep-steelskin/tags .*/v?(\d\S*)\.tar\.gz
