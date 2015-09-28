@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Contact: Brad Parker
 Upstream-Name: msi-keyboard
-Source: https://github.com/giuliopaci/msi-keyboard/
+Source: https://github.com/bparker06/msi-keyboard/
 
 Files: *
 Copyright: 2015 Brad Parker
