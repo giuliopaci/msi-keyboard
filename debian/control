@@ -1,5 +1,5 @@
 Source: msi-keyboard
-Section: devel
+Section: utils
 Priority: optional
 Maintainer: Giulio Paci <giuliopaci@gmail.com>
 Build-Depends: devscripts,
@@ -7,15 +7,16 @@ Build-Depends: devscripts,
  dh-buildinfo,
  dpkg-dev (>= 1.16.1~),
  qt5-qmake (>= 5.4.2),
+ qtbase5-dev,
  libhidapi-dev
 Standards-Version: 3.9.6
 Vcs-Git: https://github.com/giuliopaci/msi-keyboard.git
 Vcs-Browser: https://github.com/giuliopaci/msi-keyboard/
-Homepage: https://github.com/giuliopaci/msi-keyboard/
+Homepage: https://github.com/bparker06/msi-keyboard/
 
 Package: msi-keyboard
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, nodejs
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: command line tool to change MSI steelseries keyboards color setup
  This command line tool allows one to change the color setup of MSI
  steelseries keyboards, found on some MSI laptop.
