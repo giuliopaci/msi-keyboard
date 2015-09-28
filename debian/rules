@@ -1,7 +1,6 @@
 #!/usr/bin/make -f
 
 export DH_VERBOSE = 1
-# INSTALLDIR=$(CURDIR)/debian/steelskin-pepproxy/usr
 
 %:
 	dh $@
@@ -9,18 +8,10 @@ export DH_VERBOSE = 1
 override_dh_auto_configure:
 	QT_SELECT=5 dh_auto_configure
 
-# override_dh_auto_build:
-# 	sed -e 's/#[[:space:]]*!.*env.*node/&js/' -i bin/pepProxy
-# 	-mv ../steelskin-pepproxy.node_modules node_modules
-# 	npm install --production
+override_dh_auto_build:
+	PATH="`pwd`":"$$PATH" help2man msi-keyboard --no-info --name="MSI steelseries keyboard color changer" > debian/msi-keyboard.1
+	dh_auto_build
 
-# override_dh_auto_clean:
-# 	dh_auto_clean
-# 	sed -e 's/\(#[[:space:]]*!.*env.*node\)js/\1/' -i bin/pepProxy
-# 	-mv node_modules ../steelskin-pepproxy.node_modules
-# 	#$(RM) -r node_modules
-
-# override_dh_auto_install:
-# 	#INSTALL_DIR=$(INSTALLDIR) make install
-
-# override_dh_auto_test:
+override_dh_auto_clean:
+	$(RM) debian/msi-keyboard.1
+	dh_auto_clean
