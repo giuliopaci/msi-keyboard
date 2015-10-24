@@ -6,7 +6,7 @@ Build-Depends: devscripts,
  debhelper (>= 9~),
  dh-buildinfo,
  dpkg-dev (>= 1.16.1~),
- qt5-qmake (>= 5.4.2),
+ qt5-qmake (>= 5.2.1),
  qtbase5-dev,
  libhidapi-dev,
  help2man
