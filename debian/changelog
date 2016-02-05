@@ -1,5 +1,5 @@
 msi-keyboard (1.0-1) experimental; urgency=low
 
-  * Initial release
+  * Initial release. (Closes: #813810)
 
- -- Giulio Paci <giuliopaci@gmail.com>  Fri, 05 Feb  2016 14:21:00 +0100
+ -- Giulio Paci <giuliopaci@gmail.com>  Fri, 05 Feb  2016 14:55:00 +0100
