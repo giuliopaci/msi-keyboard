@@ -11,8 +11,8 @@ Build-Depends: devscripts,
  libhidapi-dev,
  help2man
 Standards-Version: 3.9.6
-Vcs-Git: https://github.com/giuliopaci/msi-keyboard.git
-Vcs-Browser: https://github.com/giuliopaci/msi-keyboard/
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/msi-keyboard.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/msi-keyboard.git
 Homepage: https://github.com/bparker06/msi-keyboard/
 
 Package: msi-keyboard
